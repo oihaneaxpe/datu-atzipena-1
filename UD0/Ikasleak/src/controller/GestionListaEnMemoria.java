@@ -18,7 +18,7 @@ public class GestionListaEnMemoria {
     public static ObservableList<Ikaslea> cargarDatos() {
 
         return FXCollections.observableArrayList(
-                new Ikaslea(1, "Julen", "Aboitiz", "Bermeosolo", "dam2-jaboitizb"),
+                new Ikaslea(1, "Julen", "Aboitiz", "Bermeo\nsolo", "dam2-jaboitizb"),
                 new Ikaslea(2, "Aimar", "Aizpuru", "Eguia", "dam2-aaizpurue"),
                 new Ikaslea(3, "Jon", "Akarregi", "Letona", "dam2-jakarregi"),
                 new Ikaslea(4, "Julen", "Alzaa", "Pedro de Oliveira", "dam2-jalzaaped"),

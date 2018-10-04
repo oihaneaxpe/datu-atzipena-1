@@ -19,6 +19,8 @@ import javax.xml.transform.stream.StreamResult;
 //import javax.xml.transform.TransformerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
 //import org.w3c.dom.Element;
@@ -49,7 +51,22 @@ public class XMLFitxategiakErabili {
       //Zuhaitza irakurri	
         System.out.println("Elementu erroa = Dokumentu elementua: " +document.getDocumentElement().getTagName());
         System.out.println("Liburu kopurua: " + document.getElementsByTagName("liburu").getLength()); 
-		
+        NodeList liburuNodoak = document.getElementsByTagName("liburu");
+        for(int i =0;i<liburuNodoak.getLength();i++) {
+            Node nodoa = liburuNodoak.item(i);
+            Element elemLiburua=(Element)nodoa;
+            System.out.print(elemLiburua.getAttribute("isbn")+" - ");
+            NodeList liburuNodoarenSemeak = nodoa.getChildNodes();
+            for (int j=0;j<liburuNodoarenSemeak.getLength();j++){
+                Node semea = liburuNodoarenSemeak.item(j);
+                if (semea.getNodeName()=="izenburua"){
+                    System.out.println(((Element)semea.getChildNodes()).getTextContent());
+                }
+                
+            }
+            
+        }
+        
 			
       //Zuhaitza aldatu
 	//Elementuak sortu, atributuak eta testua gehitu

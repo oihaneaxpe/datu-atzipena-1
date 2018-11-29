@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 27, 2018 5:53:45 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Ikaslea" table="Ikaslea" catalog="IkasleakDB_ORMprobak" optimistic-lock="version">
+        <id name="zenbakia" type="int">
+            <column name="zenbakia" />
+            <generator class="assigned" />
+        </id>
+        <property name="izena" type="string">
+            <column name="izena" length="65535" />
+        </property>
+        <property name="abizena1" type="string">
+            <column name="abizena1" length="65535" />
+        </property>
+        <property name="abizena2" type="string">
+            <column name="abizena2" length="65535" />
+        </property>
+        <property name="microsoftKontua" type="string">
+            <column name="microsoftKontua" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

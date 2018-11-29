@@ -1,0 +1,60 @@
+
+.root  
+{
+    -fx-font-size: 14pt;
+    -fx-font-family: "Trebuchet MS";
+}
+
+.button
+{
+    -fx-background-color:#888888;
+    -fx-background-radius: 5,5,4;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+
+.text-field
+{
+    -fx-font-size: 12pt;
+}
+
+.label 
+{
+    -fx-text-alignment:center;
+}
+
+.izenburua 
+{
+    -fx-font-size: 20pt;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.addBobOk
+{
+    -fx-background-color:#ff8c1a;
+    -fx-background-radius: 5,5,4;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+.addBobOk:hover
+{
+    -fx-background-color:#e67300;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+.tableRowColor
+{
+    -fx-selection-bar: #ff8c1a;
+}
+
+.rowAligment
+{
+    -fx-halignment: center;
+    -fx-alignment: center;
+    -fx-valignment: center;
+}
+
+
